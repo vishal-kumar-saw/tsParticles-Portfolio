@@ -1,0 +1,221 @@
+#header {
+    transform: scale(1.5);
+}
+
+#header h3 {
+    font-size: 1.5vw;
+}
+
+#navbar {
+    display: flex;
+}
+
+#hamburger-icon {
+    padding: 0.1vw 3vw 1vw 3vw;
+    border: 0.5vw solid transparent;
+    cursor: pointer;
+    transition: color 0.3s, border 0.3s;
+    font-size: 8vw;
+    margin: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.hg {
+    width: 5vw;
+    height: 0.8vw;
+    background-color: white;
+    margin: 1vw 0;
+    transition: background-color 0.3s;
+}
+
+#hamburger-icon:hover {
+    border: 0.5vw solid #66fcf1;
+}
+
+#hamburger-icon:hover .hg {
+    background-color: #66fcf1;
+}
+
+#sidebar {
+    height: 100vh;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    background-color: black;
+    transition: opacity 0.5s, width 0.5s;
+}
+
+#sidebar a {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-weight: 800;
+    font-size: 9vw;
+    margin: 0;
+    padding: 1vw;
+    width: 90%;
+    text-align: left;
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    border-radius: 5vw;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s, color 0.3s;
+}
+
+#sidebar a:hover {
+    color: white;
+}
+
+#close-button {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+    color: white;
+    font-size: 7vw;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0.5vw solid transparent;
+    opacity: 0;
+    transition: color 0.3s, border 0.3s, opacity 0.3s;
+}
+
+#close-button:hover {
+    color: #66fcf1;
+    border: 0.5vw solid #66fcf1;
+}
+
+#skills-content h1 {
+    font-size: 9vw;
+    margin-bottom: 3vw;
+}
+
+.title {
+    font-size: 4vw;
+    top: -2vw;
+    margin-left: 4vw;
+}
+
+.skillbox {
+    width: 80%;
+    margin-left: 12vw;
+}
+
+.skill {
+    margin: 3vw 0;
+}
+
+.skill img {
+    width: 6vw;
+}
+
+.skillbar {
+    font-size: 3vw;
+}
+
+#projects h1 {
+    font-size: 9vw;
+    margin-top: 15vw;
+    margin-bottom: 10vw;
+}
+
+.projects-page {
+    flex-direction: column;
+    margin-bottom: 30vw;
+}
+
+.projects-page img {
+    width: 75vw;
+    border-radius: 3vw;
+}
+
+.projects-page .description {
+    margin-top: 5vw;
+    margin-left: 15vw;
+}
+
+.projects-page .description h1 {
+    font-size: 7vw !important;
+    line-height: 8vw;
+}
+
+.projects-page .description p {
+    font-size: 3vw;
+}
+
+.projects-page .description a {
+    font-size: 2.5vw;
+    padding: 2vw;
+}
+
+#contact {
+    justify-content: center;
+}
+
+#contact-overlay {
+    height: auto;
+    padding: 8vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    width: 70%;
+}
+
+#contact-overlay h1 {
+    font-size: 10vw;
+    margin-left: 0;
+}
+
+#contact-overlay p {
+    width: 100%;
+    font-size: 3vw;
+    line-height: 3.5vw;
+    margin-left: 0;
+}
+
+#social-media-group-contact {
+    margin-left: 0;
+}
+
+.social-btn {
+    font-size: 3vw !important;
+    width: 100%;
+}
+
+.fa {
+    font-size: 3vw;
+    margin-right: 2vw;
+}
+
+#about-container h1 {
+    font-size: 9vw;
+}
+
+#about-container h6 {
+    font-size: 2vw;
+}
+
+#about-container p {
+    font-size: 3vw;
+    line-height: 5vw;
+    width: 95%;
+}
+
+#about-container img {
+    display: none;
+}
+
+#img-background {
+    display: none;
+}
+
+#about-container a {
+    font-size: 2.5vw;
+}

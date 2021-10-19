@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    background-color: #0b0c10;
+    height: 100vh;
+}
+
+#header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header h1 {
+    font-family: 'Anton', sans-serif;
+    color: #0b0c10;
+    -webkit-text-stroke-color: #66fcf1;
+    -webkit-text-stroke-width: 0.15vw;
+    font-size: 15vw;
+    text-align: center;
+    cursor: default;
+    margin: 0;
+}
+
+#header h1::selection {
+    color: none;
+    background: none;
+}
+
+#header h1::-moz-selection {
+    color: none;
+    background: none;
+}
+
+#header h3::selection {
+    color: none;
+    background: none;
+}
+
+#header h3::-moz-selection {
+    color: none;
+    background: none;
+}
+
+#header h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    margin-bottom: -3vw;
+    letter-spacing: 0.2vw;
+}
+
+#about-bg {
+    background-image: url(../images/IIIT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#about {
+    background-color: #66fcf2c5;
+    height: 100vh;
+}
+
+#about-container {
+    border-left: 0.15vw solid #0b0c10;
+    width: 80%;
+    position: relative;
+}
+
+#about-container h6 {
+    font-family: "Lato", sans-serif;
+    font-size: 0.8vw;
+    letter-spacing: 0.2vw;
+    margin-left: 4vw;
+    margin-top: 0.5vw;
+}
+
+#about-container h1 {
+    color: #0b0c10;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 6vw;
+    margin: 0;
+    margin-left: 4vw;
+    cursor: default;
+}
+
+#about-container p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 2vw;
+    font-size: 1.3vw;
+    width: 60%;
+    margin-left: 4vw;
+    margin-bottom: 3vw;
+}
+
+#about-container img {
+    height: 100%;
+    border: 0.15vw solid #0b0c10;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#about-container a {
+    font-family: 'Lato', sans-serif;
+    color: #0b0c10;
+    font-weight: 700;
+    font-size: 0.9vw;
+    letter-spacing: 0.15vw;
+    margin-left: 4vw;
+    text-underline-offset: 0.5vw;
+    transition: color 0.3s, text-underline-offset 0.3s;
+}
+
+#about-container a:hover {
+    color: #2b7a78;
+    text-underline-offset: 0.2vw;
+}
+
+#img-background {
+    right: 0.5vw !important;
+    top: 0.5vw !important;
+    height: 100%;
+    border: 0.2vw solid #0b0c10;
+}
+
+.ignore {
+    visibility: hidden;
+    font-size: 0.8vw;
+}
+
+#contact-bg {
+    background-image: url(../images/scenery.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#contact {
+    display: flex;
+    justify-content: flex-start;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 8px 8px;
+    height: 100vh;
+}
+
+#contact-overlay {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-overlay h1 {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 7vw;
+    margin-left: 8vw;
+    margin-top: -3vw;
+    cursor: default;
+}
+
+#contact-overlay p {
+    margin-left: 8vw;
+    width: 60%;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 2vw;
+    font-size: 1.3vw;
+}
+
+#social-media-group-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    margin-top: 1.5vw;
+}
+
+.social-btn {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5vw !important;
+    width: 80%;
+    margin-bottom: 1vw;
+}
+
+#skills {
+    background: linear-gradient(110deg, #2b7a78 60%, #3aafa9 60%);
+    height: 100vh;
+}
+
+#skills-content {
+    width: 80%;
+    border-left: 0.15vw solid #66fcf1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#skills-content h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #66fcf1;
+    font-size: 6vw;
+    margin: 0;
+    margin-left: 4vw;
+    cursor: default;
+}
+
+.skill {
+    position: relative;
+}
+
+.skillbox {
+    border-radius: 2vw;
+    width: 90%;
+    border: 0.15vw solid #66fcf1;
+    margin-left: 8vw;
+    margin-top: 3.2vw;
+}
+
+.skillbar {
+    padding-top: 0.5vw;
+    border-radius: 2vw 0 0 2vw;
+    padding-bottom: 0.5vw;
+    background-color: #66fcf1;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 1vw;
+    font-size: 0.8vw;
+}
+
+.skill img {
+    width: 3vw;
+    position: absolute;
+    left: 4vw;
+    top: 2.5vw;
+}
+
+.title {
+    position: absolute;
+    top: 1.5vw;
+    left: 8vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1vw;
+    color: white;
+}
+
+#projects {
+    background-image: repeating-linear-gradient(-45deg, #3aafa9, rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 8px 8px;
+    flex-direction: column;
+    background-color: white;
+}
+
+#projects h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 6vw;
+}
+
+.projects-page {
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projects-page img {
+    width: 45vw;
+    margin-left: 5vw;
+    border-radius: 1vw;
+}
+
+.projects-page .description {
+    height: 24vw;
+    margin-left: 3vw;
+}
+
+.projects-page .description h1 {
+    color: black;
+    width: 80%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4vw !important;
+    cursor: default;
+    margin: 0 !important;
+    transition: color 0.3s;
+}
+
+.projects-page .description p {
+    color: black;
+    width: 80%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 3vw;
+}
+
+.projects-page .description a {
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    border: 0.15vw solid black;
+    margin-top: -0.5vw;
+    padding: 1vw;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+#navbar {
+    top: 0;
+    background-color: transparent;
+    opacity: 0;
+    transition: top 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+nav ul {
+    margin-top: 1.3vw;
+    list-style: none;
+    text-align: right;
+    margin-right: 2vw;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.78125vw;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 0.52083vw;
+    letter-spacing: 0.05vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85vw;
+}
+
+nav ul li a {
+    border-bottom: 0.2vw solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66fcf1;
+    border-bottom: 0.2vw solid #66fcf1;
+}
+
+#sidebar {
+    display: none;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@700&family=Lato:wght@300;700&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sbuttons/dist/sbuttons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/computer.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px) and (orientation:portrait)" href="css/mobile.css">
+    <link rel="icon" href="images/A.png">
+    <title>Vishal Kumar Saw</title>
+</head>
+
+<body onload="fadeInNavbar()">
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id="sidebar">
+        <div onclick="closeSidebar()" id="close-button">X</div>
+        <a href="#home" onclick="closeSidebar()">HOME</a>
+        <a href="#about" onclick="closeSidebar()">ABOUT</a>
+        <a href="#skills" onclick="closeSidebar()">SKILLS</a>
+        <a href="#projects" onclick="closeSidebar()">PROJECTS</a>
+        <a href="#contact" onclick="closeSidebar()">CONTACT</a>
+    </div>
+
+    <section id="home">
+        <div id="header">
+            <h3 data-aos="fade-in" data-aos-delay="500" data-aos-anchor-placement="top-bottom">HI, MY NAME IS</h3>
+            <h1 data-aos="fade-in" data-aos-delay="1500" data-aos-anchor-placement="top-bottom">VISHAL</h1>
+        </div>
+    </section>
+
+    <div id="about-bg">
+        <section id="about">
+            <div id="about-container" data-aos="fade-in" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                <div>
+                    <!-- <img src="images/Transparent_background.png" id="img-background"> -->
+                    <img src="images/profile_picture.jpeg" style="width: 300px; margin:14px">
+                </div>
+                <div>
+                    <h1>VISHAL</h1>
+                    <h1 style="margin-top: -1.5vw;">KUMAR SAW</h1>
+                    <h6>STUDENT DEVELOPER</h6>
+                    <p>I am a Computer Science and Engineering student at Indian Institute of Technology (BHU),Varanasi, India. I am passionate about competitive programming,software development and using my skills to
+                        solve
+                        real-world problems, and am always looking to broaden my horizons. My hobbies are playing cricket and badminton. Currently, I am exploring web development and computer systems.</p>
+                    <a href="#contact">REACH OUT TO ME <span>&#8594;</span></a>
+                    <div class="ignore">Filler text - to be ignored</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="skills">
+        <div id="skills-content" data-aos="fade-in" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+            <h1>SKILLS</h1>
+            <div class="skill">
+                <img src="images/CPP.png" data-aos="flip-right" data-aos-delay="1000"
+                    data-aos-anchor-placement="top-bottom">
+                <div class="title" data-aos="fade-right" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
+                    C/C++</div>
+                <div class="skillbox">
+                    <div data-aos="fill-bar-80" data-aos-delay="1500" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom" class="skillbar" id="cpp">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="images/Python.png" data-aos="flip-right" data-aos-delay="1000"
+                    data-aos-anchor-placement="top-bottom">
+                <div class="title" data-aos="fade-right" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
+                    Python</div>
+                <div class="skillbox">
+                    <div data-aos="fill-bar-80" data-aos-delay="1500" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom" class="skillbar" id="python">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="images/HTML.png" data-aos="flip-right" data-aos-delay="1000"
+                    data-aos-anchor-placement="top-bottom">
+                <div class="title" data-aos="fade-right" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
+                    HTML5</div>
+                <div class="skillbox">
+                    <div data-aos="fill-bar-75" data-aos-delay="1500" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom" class="skillbar" id="html">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="images/CSS.png" data-aos="flip-right" data-aos-delay="1000"
+                    data-aos-anchor-placement="top-bottom">
+                <div class="title" data-aos="fade-right" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
+                    CSS3</div>
+                <div class="skillbox">
+                    <div data-aos="fill-bar-75" data-aos-delay="1500" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom" class="skillbar" id="css">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="images/JS.png" data-aos="flip-right" data-aos-delay="1000"
+                    data-aos-anchor-placement="top-bottom">
+                <div class="title" data-aos="fade-right" data-aos-delay="1000" data-aos-anchor-placement="top-bottom">
+                    Javascript</div>
+                <div class="skillbox">
+                    <div data-aos="fill-bar-65" data-aos-delay="1500" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom" class="skillbar" id="js">65%</div>
+                </div>
+            </div>
+            <div class="ignore">Filler text - to be ignored</div>
+        </div>
+    </section>
+
+
+    <div id="contact-bg">
+        <section id="contact">
+            <div id="contact-overlay">
+                <div data-aos="fade-in" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                    <h1>CONNECT</h1>
+                    <h1 style="margin-top: -2vw;">WITH ME</h1>
+                </div>
+                <p data-aos="fade-in" data-aos-delay="1500" data-aos-anchor-placement="top-bottom">Want to reach out to
+                    me? You can contact me via email or any of my social media profiles, listed
+                    below.</p>
+                <div id="social-media-group-contact" data-aos="zoom-in" data-aos-delay="2400"
+                    data-aos-anchor-placement="top-bottom">
+                    <a class="sbtn social-btn github" class="link" href="https://github.com/vishal-kumar-saw"
+                        target="_blank">GITHUB</a>
+                    <a class="sbtn social-btn linkedin" class="link"
+                        href="https://www.linkedin.com/in/vishal-kumar-saw/" target="_blank">
+                        LINKEDIN</a>
+                    <a class="sbtn social-btn microsoft" class="link"
+                        href="mailto: vishalkrsaw19035059@gmail.com" target="_blank">
+                        EMAIL</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/mediaquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.31.1/tsparticles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

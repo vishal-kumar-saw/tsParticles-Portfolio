@@ -1,0 +1,42 @@
+[data-aos="fill-bar-80"] {
+    width: 0;
+    color: transparent;
+    transition-property: width, color;
+}
+
+[data-aos="fill-bar-80"].aos-animate {
+    width: 80%;
+    color: black;
+}
+
+[data-aos="fill-bar-75"] {
+    width: 0;
+    color: transparent;
+    transition-property: width, color;
+}
+
+[data-aos="fill-bar-75"].aos-animate {
+    width: 75%;
+    color: black;
+}
+
+
+[data-aos="fill-bar-65"] {
+    width: 0;
+    color: transparent;
+    transition-property: width, color;
+}
+
+[data-aos="fill-bar-65"].aos-animate {
+    width:65%;
+    color: black;
+}
+
+[data-aos="fade-in"] {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+[data-aos="fade-in"].aos-animate {
+    opacity: 1;
+}
